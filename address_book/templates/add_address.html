@@ -3,4 +3,31 @@
 
 {% block content %}
 	<h1>Add address...</h1>
+	<br/>
+	<form method="POST">
+		{% csrf_token %}
+	  <div class="form-group">
+	    <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Full Name" name="name">
+	  </div>
+	  <div class="form-group">
+	    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email Address" name="email">
+	  </div>
+	  <div class="form-group">
+	    <input type="text" class="form-control" id="phone" aria-describedby="emailHelp" placeholder="Phone" name="phone">
+	  </divP
+	  <div class="form-group">
+	    <input type="text" class="form-control" id="address" aria-describedby="emailHelp" placeholder="Address" name="address">
+	  </div>
+	  <div class="form-group">
+	    <input type="text" class="form-control" id="city" aria-describedby="emailHelp" placeholder="City" name="city">
+	  </div>
+	  <div class="form-group">
+	    <input type="text" class="form-control" id="state" aria-describedby="emailHelp" placeholder="State" name="state">
+	  </div>
+	  <div class="form-group">
+	    <input type="text" class="form-control" id="zipcode" aria-describedby="emailHelp" placeholder="ZIP Code" name="zipcode">
+	  </div>
+	<br/>
+	  <button type="submit" class="btn btn-secondary">Submit</button>
+	</form>
 {% endblock %}
